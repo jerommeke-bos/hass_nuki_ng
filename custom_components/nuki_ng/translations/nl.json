@@ -1,0 +1,35 @@
+{
+  "title": "Nuki Lock",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Nieuw Nuki apparaat",
+        "data": {
+          "name": "Invoernaam (optioneel)",
+          "address": "Hostname of IP adres van de Nuki bridge",
+          "token": "Bridge Api token",
+          "web_token": "Web Api token",
+          "hass_url": "Home Assistant interne URL",
+          "update_seconds": "Status interval polling (seconden)"
+        }
+      }
+    },
+    "error": {
+      "invalid_bridge_token": "Fout gedurende de communicatie met de Nuki bridge",
+      "invalid_web_token": "Fout gedurende de communicatie met de Nuki Web API",
+      "no_token": "Het Bridge token of het Web API token is noodzakelijk",
+      "no_bridge_url": "Bridge adres is noodzakelijk",
+      "https_not_supported": "Bridge ondersteunt geen HTTPS callbacks. Maak Home Assistant aub toegankelijk via HTTP"
+    }
+  },
+  "options": {
+    "step": {
+      "options": {
+        "title": "Configureer Nuki apparaat",
+        "data": {
+          "update_seconds": "Status interval polling (seconden)"
+        }
+      }
+    }
+  }
+}
